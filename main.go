@@ -56,19 +56,31 @@ func main() {
 
 	//? MAPS
 
-	langs := make(map[string]string)
+	// 	langs := make(map[string]string)
 
-	langs["js"] = "javascript"
-	langs["py"] = "python"
-	langs["go"] = "golang"
-	langs["rb"] = "ruby"
+	// 	langs["js"] = "javascript"
+	// 	langs["py"] = "python"
+	// 	langs["go"] = "golang"
+	// 	langs["rb"] = "ruby"
 
-	fmt.Println(langs)
-	fmt.Println("js short for: ", langs["js"])
-	delete(langs, "rb")
-	fmt.Println(langs)
+	// 	fmt.Println(langs)
+	// 	fmt.Println("js short for: ", langs["js"])
+	// 	delete(langs, "rb")
+	// 	fmt.Println(langs)
 
-	for key, value := range langs {
-		fmt.Printf("for key %v, value is %v \n", key, value)
-	}
+	// 	for key, value := range langs {
+	// 		fmt.Printf("for key %v, value is %v \n", key, value)
+	// 	}
+
+	//?struct
+
+	rohan := User{Name: "Rohan", Email: "rohan@rohan.dev", Age: 24}
+	fmt.Printf("%v age is %v and Email is %v\n", rohan.Name, rohan.Age, rohan.Email)
+
+}
+
+type User struct {
+	Name  string
+	Email string
+	Age   int8
 }
