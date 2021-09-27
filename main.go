@@ -48,10 +48,27 @@ func main() {
 
 	//?remove value from slice based on index
 
-	var langs = []string{"js", "py", "java", "go", "ts"}
+	// var langs = []string{"js", "py", "java", "go", "ts"}
+	// fmt.Println(langs)
+	// var index int = 2
+	// langs = append(langs[:index], langs[index+1:]...)
+	// fmt.Println(langs)
+
+	//? MAPS
+
+	langs := make(map[string]string)
+
+	langs["js"] = "javascript"
+	langs["py"] = "python"
+	langs["go"] = "golang"
+	langs["rb"] = "ruby"
+
 	fmt.Println(langs)
-	var index int = 2
-	langs = append(langs[:index], langs[index+1:]...)
+	fmt.Println("js short for: ", langs["js"])
+	delete(langs, "rb")
 	fmt.Println(langs)
 
+	for key, value := range langs {
+		fmt.Printf("for key %v, value is %v \n", key, value)
+	}
 }
