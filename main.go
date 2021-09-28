@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
+	"time"
 )
 
 func main() {
@@ -74,13 +76,44 @@ func main() {
 
 	//?struct
 
-	rohan := User{Name: "Rohan", Email: "rohan@rohan.dev", Age: 24}
-	fmt.Printf("%v age is %v and Email is %v\n", rohan.Name, rohan.Age, rohan.Email)
+	// rohan := User{Name: "Rohan", Email: "rohan@rohan.dev", Age: 24}
+	// fmt.Printf("%v age is %v and Email is %v\n", rohan.Name, rohan.Age, rohan.Email)
+
+	//? Switch Case
+
+	rand.Seed(time.Now().UnixNano())
+	dicenumber := rand.Intn(6) + 1
+
+	switch dicenumber {
+	case 1:
+
+		fmt.Println("The number is 1 you can open")
+
+	case 2:
+
+		fmt.Println("you can move 2 spot")
+
+	case 3:
+
+		fmt.Println("you can move 3 spot")
+
+	case 4:
+
+		fmt.Println("you can move 4 spot")
+
+	case 5:
+
+		fmt.Println("you can move 5 spot")
+		// fallthrough
+	case 6:
+		fmt.Println("the number is 6 you can roll again")
+
+	}
 
 }
 
-type User struct {
-	Name  string
-	Email string
-	Age   int8
-}
+// type User struct {
+// 	Name  string
+// 	Email string
+// 	Age   int8
+// }
