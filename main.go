@@ -109,15 +109,34 @@ func main() {
 	// }
 
 	//? For Loop
-	langs := []string{"js", "go", "py", "rb", "ts"}
+	// langs := []string{"js", "go", "py", "rb", "ts"}
 
-	for i := range langs {
-		fmt.Println(langs[i])
+	// for i := range langs {
+	// 	fmt.Println(langs[i])
+	// }
+
+	// for index, i := range langs {
+	// 	fmt.Printf("index is %v and language is %v\n", index, i)
+	// }
+
+	value := 1
+
+	for value < 10 {
+
+		if value == 5 {
+			// fmt.Println("value is:", value)
+			goto hola
+			// value++
+			// continue
+		}
+		fmt.Println("value is ", value)
+		value++
+		// goto hola
+
 	}
 
-	for index, i := range langs {
-		fmt.Printf("index is %v and language is %v\n", index, i)
-	}
+hola:
+	fmt.Println("hola amigos")
 
 }
 
