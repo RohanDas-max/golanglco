@@ -2,8 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
-	"time"
 )
 
 func main() {
@@ -81,33 +79,44 @@ func main() {
 
 	//? Switch Case
 
-	rand.Seed(time.Now().UnixNano())
-	dicenumber := rand.Intn(6) + 1
+	// rand.Seed(time.Now().UnixNano())
+	// dicenumber := rand.Intn(6) + 1
 
-	switch dicenumber {
-	case 1:
+	// switch dicenumber {
+	// case 1:
 
-		fmt.Println("The number is 1 you can open")
+	// 	fmt.Println("The number is 1 you can open")
 
-	case 2:
+	// case 2:
 
-		fmt.Println("you can move 2 spot")
+	// 	fmt.Println("you can move 2 spot")
 
-	case 3:
+	// case 3:
 
-		fmt.Println("you can move 3 spot")
+	// 	fmt.Println("you can move 3 spot")
 
-	case 4:
+	// case 4:
 
-		fmt.Println("you can move 4 spot")
+	// 	fmt.Println("you can move 4 spot")
 
-	case 5:
+	// case 5:
 
-		fmt.Println("you can move 5 spot")
-		// fallthrough
-	case 6:
-		fmt.Println("the number is 6 you can roll again")
+	// 	fmt.Println("you can move 5 spot")
+	// 	// fallthrough
+	// case 6:
+	// 	fmt.Println("the number is 6 you can roll again")
 
+	// }
+
+	//? For Loop
+	langs := []string{"js", "go", "py", "rb", "ts"}
+
+	for i := range langs {
+		fmt.Println(langs[i])
+	}
+
+	for index, i := range langs {
+		fmt.Printf("index is %v and language is %v\n", index, i)
 	}
 
 }
