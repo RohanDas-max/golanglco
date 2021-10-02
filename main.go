@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func main() {
 
 	//ARRAY
@@ -119,24 +115,24 @@ func main() {
 	// 	fmt.Printf("index is %v and language is %v\n", index, i)
 	// }
 
-	value := 1
+	// 	value := 1
 
-	for value < 10 {
+	// 	for value < 10 {
 
-		if value == 5 {
-			// fmt.Println("value is:", value)
-			goto hola
-			// value++
-			// continue
-		}
-		fmt.Println("value is ", value)
-		value++
-		// goto hola
+	// 		if value == 5 {
+	// 			// fmt.Println("value is:", value)
+	// 			goto hola
+	// 			// value++
+	// 			// continue
+	// 		}
+	// 		fmt.Println("value is ", value)
+	// 		value++
+	// 		// goto hola
 
-	}
+	// 	}
 
-hola:
-	fmt.Println("hola amigos")
+	// hola:
+	// 	fmt.Println("hola amigos")
 
 }
 
