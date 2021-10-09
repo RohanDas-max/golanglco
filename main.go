@@ -2,7 +2,13 @@ package main
 
 func main() {
 
-	//ARRAY
+	//? Pointer
+	// a := 10
+	// pt := &a
+	// fmt.Println(pt)
+	// fmt.Println(*pt)
+
+	//?ARRAY
 	// var fruitlist [4]string
 
 	// fruitlist[0] = "apple"
