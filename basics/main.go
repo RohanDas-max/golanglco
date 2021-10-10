@@ -140,10 +140,13 @@ func main() {
 	// hola:
 	// 	fmt.Println("hola amigos")
 
+	//?methods
+
 }
 
 // type User struct {
-// 	Name  string
-// 	Email string
-// 	Age   int8
+// 	Name   string
+// 	Email  string
+// 	status bool
+// 	Age    int8
 // }
