@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 
 	//? Pointer
@@ -140,7 +142,7 @@ func main() {
 	// hola:
 	// 	fmt.Println("hola amigos")
 
-	//?methods
+	fmt.Println("hola")
 
 }
 
